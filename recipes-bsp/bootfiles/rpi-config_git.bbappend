@@ -21,4 +21,7 @@ do_deploy_append() {
         echo "" >> ${DEPLOYDIR}/bcm2835-bootfiles/config.txt
         echo "dtoverlay=pi3-disable-bt" >> ${DEPLOYDIR}/bcm2835-bootfiles/config.txt
     fi
+
+        sed -i '/#dtparam=i2c_arm=/ c\dtparam=i2c_arm=on' ${DEPLOYDIR}/bcm2835-bootfiles/config.txt
+        sed -i '/#dtparam=i2c_vc=/ c\dtparam=i2c_vc=on' ${DEPLOYDIR}/bcm2835-bootfiles/config.txt
 }
