@@ -3,4 +3,3 @@
 scripts/config.txt
 scripts/interfaces
 scripts/wpa_supplicant.conf
-recipes-connectivity/wpa-supplicant/files/wpa_supplicant.conf-sane
