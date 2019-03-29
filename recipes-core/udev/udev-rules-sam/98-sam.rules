@@ -1,0 +1,4 @@
+SUBSYSTEM=="tty", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", ATTRS{serial}=="A503V4F1", SYMLINK+="ximu_red"
+SUBSYSTEM=="tty", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", ATTRS{serial}=="AK05365L", SYMLINK+="ximu_white"
+SUBSYSTEM=="tty", ATTRS{idVendor}=="2458", ATTRS{idProduct}=="0001", ATTRS{serial}=="1", SYMLINK+="myoband"
+
