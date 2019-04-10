@@ -37,6 +37,7 @@ EXTRA_TOOLS_INSTALL = " \
     libeigen-dbg \
     libeigen-dev \
     lsof \
+    mosquitto \
     nano \
     ncurses \
     tcpdump \
