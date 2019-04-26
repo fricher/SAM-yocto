@@ -26,6 +26,7 @@ DEV_SDK_INSTALL = " \
 
 DEV_EXTRAS = " \
     gdb \
+    gdbserver \
 "
 
 EXTRA_TOOLS_INSTALL = " \
