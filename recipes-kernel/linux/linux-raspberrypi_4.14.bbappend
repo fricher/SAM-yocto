@@ -1,6 +1,6 @@
-LINUX_VERSION = "4.14.98"
+LINUX_VERSION = "4.14.112"
 
-SRCREV = "e9829ff3e92f125072adae4de40750546f4268a2"
+SRCREV = "6b5c4a2508403839af29ef44059d04acbe0ee204"
 
 RPI_KERNEL_DEVICETREE = " \
     bcm2708-rpi-0-w.dtb \
@@ -14,7 +14,6 @@ RPI_KERNEL_DEVICETREE = " \
 "
 
 RPI_KERNEL_DEVICETREE_OVERLAYS = " \
-    overlays/3dlab-nano-player.dtbo \
     overlays/adau1977-adc.dtbo \
     overlays/adau7002-simple.dtbo \
     overlays/ads1015.dtbo \
