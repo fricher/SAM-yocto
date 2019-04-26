@@ -8,6 +8,7 @@ require rpi3-isir.bb
 
 QT_TOOLS = " \
     qtbase \
+    qtmqtt \
     qtserialport \
     qt5-env \
 "
