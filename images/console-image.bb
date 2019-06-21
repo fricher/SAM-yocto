@@ -8,6 +8,7 @@ inherit image
 DEPENDS += "bcm2835-bootfiles"
 
 CORE_OS = " \
+    ifupdown \
     kernel-modules \
     openssh openssh-keygen openssh-sftp-server \
     packagegroup-core-boot \

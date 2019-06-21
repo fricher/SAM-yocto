@@ -1,9 +1,10 @@
-LINUX_VERSION = "4.14.112"
+LINUX_VERSION = "4.19.50"
 
-SRCREV = "6b5c4a2508403839af29ef44059d04acbe0ee204"
+SRCREV = "2f8d963db206ce596f9a9e951ec425e9c3e1b4d9"
 
 RPI_KERNEL_DEVICETREE = " \
-    bcm2708-rpi-0-w.dtb \
+    bcm2708-rpi-zero.dtb \
+    bcm2708-rpi-zero-w.dtb \
     bcm2708-rpi-b.dtb \
     bcm2708-rpi-b-plus.dtb \
     bcm2708-rpi-cm.dtb \
@@ -41,6 +42,7 @@ RPI_KERNEL_DEVICETREE_OVERLAYS = " \
     overlays/dionaudio-loco-v2.dtbo \
     overlays/dpi18.dtbo \
     overlays/dpi24.dtbo \
+    overlays/draws.dtbo \
     overlays/dwc2.dtbo \
     overlays/dwc-otg.dtbo \
     overlays/enc28j60.dtbo \
@@ -60,6 +62,7 @@ RPI_KERNEL_DEVICETREE_OVERLAYS = " \
     overlays/hd44780-lcd.dtbo \
     overlays/hifiberry-amp.dtbo \
     overlays/hifiberry-dac.dtbo \
+    overlays/hifiberry-dacplusadc.dtbo \
     overlays/hifiberry-dacplus.dtbo \
     overlays/hifiberry-digi.dtbo \
     overlays/hifiberry-digi-pro.dtbo \
@@ -76,14 +79,17 @@ RPI_KERNEL_DEVICETREE_OVERLAYS = " \
     overlays/i2c-rtc.dtbo \
     overlays/i2c-sensor.dtbo \
     overlays/i2s-gpio28-31.dtbo \
+    overlays/ilitek251x.dtbo \
+    overlays/iqaudio-codec.dtbo \
     overlays/iqaudio-dac.dtbo \
     overlays/iqaudio-dacplus.dtbo \
     overlays/iqaudio-digi-wm8804-audio.dtbo \
+    overlays/i-sabre-q2m.dtbo \
     overlays/jedec-spi-nor.dtbo \
     overlays/justboom-dac.dtbo \
     overlays/justboom-digi.dtbo \
-    overlays/lirc-rpi.dtbo \
     overlays/ltc294x.dtbo \
+    overlays/max98357a.dtbo \
     overlays/mbed-dac.dtbo \
     overlays/mcp23017.dtbo \
     overlays/mcp23s17.dtbo \
@@ -105,6 +111,7 @@ RPI_KERNEL_DEVICETREE_OVERLAYS = " \
     overlays/pi3-disable-wifi.dtbo \
     overlays/pi3-miniuart-bt.dtbo \
     overlays/pibell.dtbo \
+    overlays/piglow.dtbo \
     overlays/piscreen2r.dtbo \
     overlays/piscreen.dtbo \
     overlays/pisound.dtbo \
@@ -132,7 +139,6 @@ RPI_KERNEL_DEVICETREE_OVERLAYS = " \
     overlays/sc16is752-i2c.dtbo \
     overlays/sc16is752-spi1.dtbo \
     overlays/sdhost.dtbo \
-    overlays/sdio-1bit.dtbo \
     overlays/sdio.dtbo \
     overlays/sdtweak.dtbo \
     overlays/smi-dev.dtbo \
@@ -157,7 +163,7 @@ RPI_KERNEL_DEVICETREE_OVERLAYS = " \
     overlays/tpm-slb9670.dtbo \
     overlays/uart0.dtbo \
     overlays/uart1.dtbo \
-    overlays/upstream-aux-interrupt.dtbo \
+    overlays/udrc.dtbo \
     overlays/upstream.dtbo \
     overlays/vc4-fkms-v3d.dtbo \
     overlays/vc4-kms-kippah-7inch.dtbo \
