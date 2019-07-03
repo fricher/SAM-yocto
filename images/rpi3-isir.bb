@@ -7,10 +7,9 @@ inherit core-image
 DEPENDS += "bcm2835-bootfiles"
 
 CORE_OS = " \
-    modutils-initscripts \
     initscripts \
+    modutils-initscripts \
     util-linux \
-    rng-tools \
     openssh \
     openssh-sftp-server \
 "
