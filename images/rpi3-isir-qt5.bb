@@ -10,18 +10,17 @@ QT_TOOLS = " \
     qtbase \
     qtmqtt \
     qtserialport \
-    qt5-env \
 "
 
-FONTS = " \
-    fontconfig \
-    fontconfig-utils \
-    ttf-bitstream-vera \
-"
+#FONTS = " \
+#    fontconfig \
+#    fontconfig-utils \
+#    ttf-bitstream-vera \
+#"
 
 IMAGE_INSTALL += " \
     ${QT_TOOLS} \
-    ${FONTS} \
 "
+#    ${FONTS}
 
 export IMAGE_BASENAME = "rpi3-isir-qt5"
