@@ -1,14 +1,12 @@
 ctrl_interface=/var/run/wpa_supplicant
 ap_scan=1
 
-#network={
-#    key_mgmt=WPA-PSK
-#    ssid="<ssid>"
-#    psk="<passphrase>"
-#}
+network={
+	ssid="routeur_rpi_etienne"
+	psk=c5ed3e8bbe22a68be51d958789831da87c061c9e12f0ae0397db7e79393f9e90
+}
 
-# open network
-#network={
-#    key_mgmt=NONE
-#    ssid="<ssid>"
-#}
+network={
+	ssid="ISIR-Stech"
+	psk=accaca27680f23f65cecfd24450e5982428e8e14681db520d8866de48c6ccb45
+}
