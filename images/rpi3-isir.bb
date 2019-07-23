@@ -32,6 +32,7 @@ DEV_EXTRAS = " \
 EXTRA_TOOLS_INSTALL = " \
     i2c-tools \
     boost \
+    espeak \
     less \
     libeigen-dbg \
     libmosquitto1 \
