@@ -27,13 +27,14 @@ DEV_SDK_INSTALL = " \
 DEV_EXTRAS = " \
     gdb \
     gdbserver \
+    valgrind \
 "
 
 EXTRA_TOOLS_INSTALL = " \
     i2c-tools \
     boost \
     espeak \
-    less \
+    htop \
     libeigen-dbg \
     libmosquitto1 \
     mosquitto \
