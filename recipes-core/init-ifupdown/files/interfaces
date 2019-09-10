@@ -5,6 +5,7 @@ allow-hotplug eth0
 iface eth0 inet dhcp
 
 auto wlan0
-iface wlan0 inet dhcp
-        wireless_mode managed
-        wpa-conf /etc/wpa_supplicant.conf
+iface wlan0 inet static
+	hostapd /etc/hostapd/hostapd.conf
+	address 10.10.0.1
+	netmask 255.255.255.0

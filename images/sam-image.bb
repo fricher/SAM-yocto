@@ -14,7 +14,8 @@ CORE_OS = " \
 "
 
 WIFI_SUPPORT = " \
-    busybox-udhcpc \
+    dnsmasq \
+    hostapd \
     init-ifupdown \
     net-tools \
     wpa-supplicant \
