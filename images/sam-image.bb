@@ -1,5 +1,4 @@
-SUMMARY = "A console development image with some C/C++ dev tools"
-HOMEPAGE = "http://www.jumpnowtek.com"
+SUMMARY = "The RPI image for SAM"
 LICENSE = "MIT"
 
 inherit core-image
@@ -27,6 +26,7 @@ DEV_SDK_INSTALL = " \
 DEV_EXTRAS = " \
     gdb \
     gdbserver \
+    rt-tests \
     valgrind \
 "
 
@@ -50,4 +50,4 @@ IMAGE_INSTALL += " \
     ${WIFI_SUPPORT} \
 "
 
-export IMAGE_BASENAME = "rpi3-isir"
+export IMAGE_BASENAME = "sam-image"
