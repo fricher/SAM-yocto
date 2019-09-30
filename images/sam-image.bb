@@ -14,14 +14,8 @@ CORE_OS = " \
 "
 
 WIFI_SUPPORT = " \
-    dnsmasq \
     hostapd \
-    init-ifupdown \
     net-tools \
-    wpa-supplicant \
-"
-
-DEV_SDK_INSTALL = " \
 "
 
 DEV_EXTRAS = " \
@@ -33,19 +27,19 @@ DEV_EXTRAS = " \
 
 EXTRA_TOOLS_INSTALL = " \
     i2c-tools \
-    boost \
     espeak \
     htop \
     libeigen-dbg \
     libmosquitto1 \
     mosquitto \
     udev-rules-sam \
+    userland \
+    systemd-analyze \
     wiringpi \
 "
 
 IMAGE_INSTALL += " \
     ${CORE_OS} \
-    ${DEV_SDK_INSTALL} \
     ${DEV_EXTRAS} \
     ${EXTRA_TOOLS_INSTALL} \
     ${WIFI_SUPPORT} \
