@@ -25,4 +25,5 @@ do_deploy_append() {
         sed -i '/#dtparam=i2c_arm=/ c\dtparam=i2c_arm=on' ${DEPLOYDIR}/bcm2835-bootfiles/config.txt
         sed -i '/#dtparam=i2c_vc=/ c\dtparam=i2c_vc=on' ${DEPLOYDIR}/bcm2835-bootfiles/config.txt
         sed -i '/#dtparam=audio=/ c\dtparam=audio=on' ${DEPLOYDIR}/bcm2835-bootfiles/config.txt
+        sed -i '/#initial_turbo=/ c\initial_turbo=20' ${DEPLOYDIR}/bcm2835-bootfiles/config.txt
 }
