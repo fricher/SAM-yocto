@@ -3,6 +3,8 @@ SRC_URI += "file://wlan0.network"
 
 FILES_${PN} += "{sysconfdir}/systemd/network/*"
 
+PACKAGECONFIG[hwdb] = "-Dhwdb=true,-Dhwdb=false,hwdb"
+
 PACKAGECONFIG_remove = " nss-resolve resolved timesyncd "
 
 do_install_append() {
