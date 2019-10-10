@@ -1,0 +1,11 @@
+[Unit]
+Description=Creates a dummy hostapd.conf with the ssid replaced by the current adapter's mac address
+After=network.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=no
+ExecStart=/usr/bin/mac-ssid.sh
+
+[Install]
+WantedBy=multi-user.target

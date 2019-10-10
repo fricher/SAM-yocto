@@ -1,11 +1,11 @@
 [Unit]
 Description=Hostapd IEEE 802.11 AP, IEEE 802.1X/WPA/WPA2/EAP/RADIUS Authenticator
-After=network.target
+After=mac-ssid.target
 
 [Service]
 Type=forking
 PIDFile=/run/hostapd.pid
-ExecStart=/usr/sbin/hostapd /etc/hostapd.conf -P /run/hostapd.pid -B
+ExecStart=/usr/sbin/hostapd /tmp/hostapd.conf -P /run/hostapd.pid -B
 Restart=on-failure
 RestartSec=1
 

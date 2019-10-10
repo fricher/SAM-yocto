@@ -8,6 +8,7 @@ CORE_OS = " \
 
 WIFI_SUPPORT = " \
     hostapd \
+    mac-ssid \
     net-tools \
 "
 
