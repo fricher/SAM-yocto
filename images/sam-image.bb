@@ -6,6 +6,6 @@ include sam-packages.inc
 
 DEPENDS += "bcm2835-bootfiles"
 
-IMAGE_INSTALL += " ${SAM_PACKAGES}"
+IMAGE_INSTALL += " ${SAM_PACKAGES_DEBUG}"
 
 export IMAGE_BASENAME = "sam-image"
