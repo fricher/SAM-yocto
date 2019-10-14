@@ -14,6 +14,7 @@ WIFI_SUPPORT = " \
 
 EXTRA_TOOLS_INSTALL = " \
     espeak \
+    i2c-tools \
     libeigen-dbg \
     libmosquitto1 \
     mosquitto \
@@ -25,7 +26,6 @@ DEV_EXTRAS = " \
     gdb \
     gdbserver \
     htop \
-    i2c-tools \
     rt-tests \
     systemd-analyze \
     valgrind \
