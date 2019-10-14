@@ -10,12 +10,11 @@ LIC_FILES_CHKSUM = "file://LICENSE.txt;md5=62ddc846179e908dc0c8efec4a42ef20 \
 "
 DEPENDS = "uthash"
 
-SRC_URI = "git://github.com/eclipse/mosquitto.git;branch=master \
+SRC_URI = "git://github.com/eclipse/mosquitto.git;tag=v1.6.4 \
            file://mosquitto.init \
 "
 
 S = "${WORKDIR}/git"
-SRCREV = "a9d1a9f11524d117804635f3e44869f69f294968"
 
 SRC_URI[md5sum] = "44831ad710d978a223943cc8a0e789ff"
 SRC_URI[sha256sum] = "3815f55fd6fd74fcee99f1696ba9585e878acb8d609d73041ae641d3de43928d"
