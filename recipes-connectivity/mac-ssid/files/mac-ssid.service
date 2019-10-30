@@ -1,6 +1,7 @@
 [Unit]
 Description=Creates a dummy hostapd.conf with the ssid replaced by the current adapter's mac address
-After=network.target
+After=sys-subsystem-net-devices-wlan0.device
+BindsTo=sys-subsystem-net-devices-wlan0.device
 
 [Service]
 Type=oneshot
