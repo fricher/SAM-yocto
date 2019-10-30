@@ -50,6 +50,7 @@ SDIMG_ROOTFS = "${IMGDEPLOYDIR}/${IMAGE_LINK_NAME}.${SDIMG_ROOTFS_TYPE}"
 inherit kernel-artifact-names
 
 do_image_samsd[depends] = " \
+    sam:do_compile \
     parted-native:do_populate_sysroot \
     mtools-native:do_populate_sysroot \
     dosfstools-native:do_populate_sysroot \
@@ -185,6 +186,11 @@ IMAGE_CMD_samsd () {
     else
         LOOP=`sudo losetup --partscan --show --find ${SDIMG}`
         sudo mkfs.ext4 -q ${LOOP}p2
+	mkdir -p tmp_part
+	sudo mount ${LOOP}p2 tmp_part
+	sudo cp ${TMPDIR}/work/${REAL_MULTIMACH_TARGET_SYS}/sam/git-r0/build/src/sam tmp_part
+	sudo umount tmp_part
+	rmdir tmp_part
 	sudo losetup -d ${LOOP}
     fi
 }

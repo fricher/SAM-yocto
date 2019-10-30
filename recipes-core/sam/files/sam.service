@@ -1,0 +1,12 @@
+[Unit]
+Description=SAM
+BindsTo=mosquitto.service opt.mount dev-i2c\x2d1.device dev-spidev0.0.device
+After=mosquitto.service opt.mount dev-i2c\x2d1.device dev-spidev0.0.device
+
+[Service]
+Type=exec
+ExecStart=/opt/sam
+Restart=no
+
+[Install]
+WantedBy=multi-user.target

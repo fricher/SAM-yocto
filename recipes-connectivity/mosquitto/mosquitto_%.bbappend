@@ -1,8 +1,9 @@
 FILESEXTRAPATHS_append := "${THISDIR}/files:"
 SRC_URI += "file://mosquitto.conf \
-	    file://mosquitto.service"
+	    file://mosquitto.service \
+	    "
 
-PACKAGECONFIG += " websockets"
+PACKAGECONFIG += " systemd websockets"
 
 EXTRA_OEMAKE += " WITH_THREADING=yes"
 
@@ -12,7 +13,6 @@ do_install_append() {
   install -d ${D}${sysconfdir}/mosquitto
   install -m 0644 ${WORKDIR}/mosquitto.conf ${D}${sysconfdir}/mosquitto
 
-  install -d ${D}{systemd_system_unitdir}
-  install -m 0644 ${WORKDIR}/mosquitto.service ${D}${systemd_system_unitdir}/mosquitto.service
-
+  install -d ${D}${systemd_unitdir}/system
+  install -m 0644 ${WORKDIR}/mosquitto.service ${D}${systemd_unitdir}/system/mosquitto.service
 }

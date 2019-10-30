@@ -1,6 +1,8 @@
 ROOTFS_BOOTSTRAP_INSTALL = ""
 
 CORE_OS = " \
+    sam \
+    udev-rules-sam \
     util-linux \
     openssh \
     openssh-sftp-server \
@@ -12,16 +14,6 @@ WIFI_SUPPORT = " \
     net-tools \
 "
 
-EXTRA_TOOLS_INSTALL = " \
-    espeak \
-    i2c-tools \
-    libeigen-dbg \
-    libmosquitto1 \
-    mosquitto \
-    udev-rules-sam \
-    userland \
-    wiringpi \
-"
 DEV_EXTRAS = " \
     gdb \
     gdbserver \
@@ -33,7 +25,6 @@ DEV_EXTRAS = " \
 
 SAM_PACKAGES = " \
     ${CORE_OS} \
-    ${EXTRA_TOOLS_INSTALL} \
     ${WIFI_SUPPORT} \
 "
 

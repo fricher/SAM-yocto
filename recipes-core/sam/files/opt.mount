@@ -1,0 +1,9 @@
+[Unit]
+Description=FS containing the SAM binary
+DefaultDependencies=no
+
+[Mount]
+What=/dev/mmcblk0p2
+Where=/opt
+Type=ext4
+Options=defaults
