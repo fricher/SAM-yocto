@@ -15,9 +15,11 @@ WIFI_SUPPORT = " \
 "
 
 DEV_EXTRAS = " \
+    bash \
     gdb \
     gdbserver \
     htop \
+    less \
     rt-tests \
     systemd-analyze \
     valgrind \
