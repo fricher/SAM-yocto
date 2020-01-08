@@ -5,9 +5,8 @@ SUBSYSTEM=="tty", ATTRS{idVendor}=="2458", ATTRS{idProduct}=="0001", ATTRS{seria
 SUBSYSTEM=="tty", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", ATTRS{serial}=="FTAJMYAO", SYMLINK+="touchbionics", TAG+="systemd"
 SUBSYSTEM=="tty", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", ATTRS{serial}=="FT9KGXJQ", SYMLINK+="touchbionics", TAG+="systemd"
 
-KERNEL=="spidev0.0", SYMLINK="spidev0.0", TAG+="systemd"
-KERNEL=="spidev0.1", SYMLINK="spidev0.1", TAG+="systemd"
-
-KERNEL=="i2c-0", SYMLINK="i2c-0", TAG+="systemd"
-KERNEL=="i2c-1", SYMLINK="i2c-1", TAG+="systemd"
-KERNEL=="i2c-2", SYMLINK="i2c-2", TAG+="systemd"
+KERNEL=="spidev0.0", TAG+="systemd"
+KERNEL=="spidev0.1", TAG+="systemd"
+KERNEL=="i2c-0", TAG+="systemd"
+KERNEL=="i2c-1", TAG+="systemd"
+KERNEL=="i2c-2", TAG+="systemd"
