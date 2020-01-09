@@ -19,6 +19,7 @@ DEV_EXTRAS = " \
     gdb \
     gdbserver \
     htop \
+    iperf3 \
     less \
     rt-tests \
     systemd-analyze \
